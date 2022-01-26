@@ -54,7 +54,8 @@ public class Servicio {
     public Persona consultarPersona(String nombre){
         //buscar por nombre
         Persona personaBuscada = null;
-            for (int i = 0; 1 <= ListaPersona.size() - 1; i++) {
+        System.out.println("entra");
+            for (int i = 0; i <= ListaPersona.size() - 1; i++) {
                 if (ListaPersona.get(i).getNombre().equals(nombre)) {
                     personaBuscada =  ListaPersona.get(i);
                     break;
